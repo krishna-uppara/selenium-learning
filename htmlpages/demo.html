@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>locator</title>
+</head>
+<body>
+<p>Click the button to display an alert box.</p>
+
+<button id = "alert"onclick="myFunction111()">pop</button>
+<p id="demo1"></p>
+<script>
+function myFunction111() {
+	
+   
+    var txt1;
+    var r1 =  alert("Hello! I am an alert box!");
+    if (r1 == true) {
+        txt1 = "You pressed OK!";
+    } 
+    document.getElementById("demo1").innerHTML = txt1;
+}
+</script>
+
+<p>Click the button to display a confirm box.</p>
+
+<button id ="confirm" onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var txt;
+    var r = confirm("Press a button!");
+    if (r == true) {
+    	txt = "You pressed OK!";
+    	window.open("https://www.w3schools.com/jsref/met_win_alert.asp");
+    } else {
+        txt = "You pressed Cancel!";
+        window.open("https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert");
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button id = "prompt"onclick="myFunction123()">Try it</button>
+
+<p id="demo2"></p>
+
+<script>
+function myFunction123() {
+    var person = prompt("Please enter your name", "");
+    if (person != null) {
+        document.getElementById("demo2").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+    var txt;
+    if (person == true) {
+    	txt = "You pressed OK!";
+    	window.open("https://www.facebook.com/");
+    } else {
+        txt = "You pressed Cancel!";
+        window.open("http://harmanhub.net/Pages/default.aspx");
+    }
+    document.getElementById("demo").innerHTML = txt;
+    
+}
+</script>
+
+<br>
+<br>
+Language
+<select id="language"multiple="multiple">Language
+<option value="java">Java</option>
+<option value="c">C</option>
+<option value="java">Java</option>
+<option value="c">C</option>
+<option value="perl">Perl</option>
+<option value="php">PHP</option>
+<option value="python">Python</option>
+<option value="javascript">JavaScript</option>
+</select>
+<br>
+<br>
+<p id="p">This is a paragraph.</p>
+<p>This is another paragraph.</p>
+<br>
+<br>
+<br>
+click on the link &nbsp &nbsp<a id = "a1" href="http://www.w3schools.com" >This is a link</a><br>
+<br><br>
+<hr>
+<a id="linki" class ="link1" name = "linki" title="click on the image"href="http://www.w3schools.com/html/html_basic.asp"><img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"  style="width:104px;height:142px;">
+</a>
+<!-- This is a comment -->
+<hr>
+<br>
+<br>
+<a id="link" class ="link2" name = "link" title="click on the image"href="http://www.w3schools.com/html/html_basic.asp"><img src="" alt="W3Schools.com"alt="W3Schools.com"  style="width:104px;height:142px;">
+<br>
+<hr>
+<br>
+<a id="link" disabled = 'element is disabled'class ="link" name = "link" title="click on the image"href="http://www.w3schools.com/html/html_basic.asp"><img src="http://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"alt="W3Schools.com"  style="width:104px;height:142px;">click on me</a>
+
+<br> <a id="a2" href="http://www.w3schools.com">This  </a>
+<br>
+<div>
+<a id="a1" hhh ="ggg"href="http://www.w3schools.com">This&nbsp;is&nbsp;a&nbsp;link&nbsp;fine&nbsp;100&nbsp;</a></br>
+<a id="a10" href="http://www.w3schools.com">This is a link test open</a><br>
+<a id="a1" href="http://www.w3schools.com">This is a link fine</a><br>
+</div>
+
+
+
+<form action="action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+
+
+<input type="submit" value="Submit">
+<input type="reset">
+</form> 
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+
+
+    <!-- Login Page -->
+    <element name="fge_username" locator="//*[@id='userName']"/>
+    <element name="fge_password" locator="//*[@id='j_password']"/>
+    <element name="fge_login" locator="//*[@id='sign-in-btn']"/>
+    <element name="userProfile" locator="//*[@id='user']"/>
+    <element name="signOutLink" locator="//*[@id='signOut']"/>
+	<element name="fge_button_returnHome" locator="//input[@value='Return Home']"/>
+	 <!-- Column resize -->
+    <element name="fge_column_resize" locator="//xe-data-table[@table-id='toReplacewithTableId']//th[contains(@aria-label,'toReplacewithColunmValue')]/div[@class='resize-col']"/>
+	<!-- Drag and Drop -->
+	<element name="fge_drag_drop" locator="//xe-data-table[@table-id= 'toReplacewithTableId']//th[contains(@aria-label,'toReplaceColumnName')]"/>
+	<!--element name="fge_drag_drop" locator="//xe-data-table[@table-id= 'toReplacewithTableId']//th[toReplacePosition]"/-->
+	<element name="fge_drag_drop" locator="//xe-data-table[@table-id='toReplacewithTableId']//th[contains(@aria-label,'toReplacewithColunmValue')]"/>
+
+</elements>
